@@ -16,14 +16,12 @@ const useButtonPress = ({ onLetter, onBackspace, onEnter }: ButtonHandlers) => {
     };
     window.addEventListener("keydown", handleKeyDown);
     if (registeredRef.current) return;
-    console.log("?");
     const onButtonPress = (letter: string) => {
-      console.log("EMITTED", letter);
       if (/^[a-zA-Z]$/.test(letter)) {
         onLetter(letter);
-      } else if ((letter === "Backspace")) {
+      } else if (letter === "Backspace") {
         onBackspace();
-      } else if ((letter === "Enter")) {
+      } else if (letter === "Enter") {
         onEnter();
       }
     };
@@ -31,7 +29,6 @@ const useButtonPress = ({ onLetter, onBackspace, onEnter }: ButtonHandlers) => {
     registeredRef.current = true;
 
     return () => {
-      console.log("wtf");
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
