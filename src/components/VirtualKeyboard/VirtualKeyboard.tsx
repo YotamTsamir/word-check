@@ -1,5 +1,5 @@
 import { myEventListener } from "../../utils/eventClicksListener";
-import "./VirtualKeyboard.css"; // or use Tailwind / inline styles
+import "./virtualKeyboard.css"; 
 
 const keys = [
   ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
