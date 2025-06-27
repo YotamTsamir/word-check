@@ -1,0 +1,34 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin-top: 2vw;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 1vw;
+}
+
+.key {
+  padding: 1.2vw 1.6vw;
+  font-size: 2.5vw;
+  border-radius: 0.6vw;
+  border: 0.2vw solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+  min-width: 6vw;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.key:hover {
+  background-color: #ddd;
+}
+
+.key-enter,
+.key-backspace {
+  min-width: 8vw;
+}

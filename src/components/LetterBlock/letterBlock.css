@@ -1,0 +1,13 @@
+.letter-container{
+    width: min(10vw,100px);
+    height: min(10vw,100px);
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter{
+    font-size: min(5vw,50px);
+}

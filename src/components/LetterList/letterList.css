@@ -1,0 +1,18 @@
+.letters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 3vw;
+}
+
+.red-border {
+  div {
+    border-color: red;
+  }
+}
+.green-border {
+  div {
+    border-color: green;
+  }
+}
